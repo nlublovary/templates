@@ -6,10 +6,14 @@ type: Plug
 standard: eu
 link: https://www.amazon.de/gp/product/B07PMW88L7
 image: https://user-images.githubusercontent.com/5904370/66715805-e8b59580-edc7-11e9-954e-dfd45c1fc07e.png
-template: '{"NAME":"SHP5","GPIO":[57,145,56,146,255,22,0,0,255,255,21,255,17],"FLAG":0,"BASE":18}' 
+template: '{"NAME":"SP112new","GPIO":[57,0,56,0,132,134,0,0,131,30,21,0,0],"FLAG":4,"BASE":18}' 
 link2: https://www.amazon.de/gp/product/B07PPZS351
 mlink: https://gosund.com/download/smart_plug/127.html
 ---
+The template above is for new models purchased after July 2020. For older SP112 models (pre July 2020) use the following template.
+'{"NAME":"SHP5","GPIO":[57,145,56,146,255,22,0,0,255,255,21,255,17],"FLAG":0,"BASE":18}'
+
+Tuya-Convert might not be possible for this device if the manufacturer started using newest Tuya firmware since this template was published (2021-02-03).
 
 Important: it is possible that your device will enter a bootloop due to a conflict with UART/serial logging.
 Fix this using: `SerialLog 0`
